@@ -1,0 +1,61 @@
+.bg-primary {
+    background-color: #1e3a8a !important;
+}
+
+.text-warning {
+    color: #fd7e14 !important;
+}
+
+.btn-warning {
+    background-color: #fd7e14 !important;
+    border-color: #fd7e14 !important;
+}
+
+.hover-text-warning:hover {
+    color: #ffc107 !important;
+}
+
+.vh-70 {
+    height: 70vh;
+}
+
+.min-vh-50 {
+    min-height: 50vh;
+}
+
+.display-1 {
+    font-size: 6rem;
+}
+
+.bg-dark {
+    background-color: #0c1944 !important;
+}
+
+.partner-logo {
+    width: 16rem;
+    height: 16rem;
+}
+
+.venz-logo-img {
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .display-1 {
+        font-size: 4rem;
+    }
+    .partner-logo {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-1 {
+        font-size: 3rem;
+    }
+    .partner-logo {
+        width: 10rem;
+        height: 10rem;
+    }
+}
