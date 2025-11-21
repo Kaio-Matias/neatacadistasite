@@ -7,29 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../src/css/style.css">
-    <style>
-        /* Estilo extra para o efeito hover nas imagens dos produtos */
-        .product-item {
-            transition: transform 0.3s ease;
-        }
-        .product-item:hover {
-            transform: scale(1.05);
-        }
-        .product-link {
-            text-decoration: none;
-            color: inherit;
-        }
-        .product-link:hover .product-title {
-            color: #fd7e14; /* Cor laranja ao passar o rato */
-        }
-        .product-img {
-            max-height: 250px;
-            object-fit: contain;
-        }
-    </style>
 </head>
 <body>
-    <header class="bg-primary text-white p-4 shadow-md">
+    <header class="bg-primary text-white p-4 shadow-sm fixed-top">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="flex-shrink-0">
           <a href="../">
@@ -43,7 +23,7 @@
           <a href="../trabalhe-conosco.html" class="text-white text-decoration-none hover-text-warning">Trabalhe Conosco</a>
         </nav>
         <div class="flex-shrink-0 d-none d-md-block">
-          <a href="../fale-conosco.html" class="btn btn-warning text-white font-semibold py-2 px-5 rounded-lg">Fale Conosco</a>
+          <a href="../fale-conosco.html" class="btn btn-warning text-white font-semibold py-2 px-4 rounded-pill">Fale Conosco</a>
         </div>
         <button class="d-md-none navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -51,294 +31,183 @@
       </div>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto text-center">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="../institucional.html">Institucional</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="../parceiros.html">Parceiros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="../trabalhe-conosco.html">Trabalhe Conosco</a>
-          </li>
-          <li class="nav-item d-md-none">
-            <a href="../fale-conosco.html" class="btn btn-warning text-white font-semibold py-2 px-5 rounded-lg">Fale Conosco</a>
-          </li>
+          <li class="nav-item"><a class="nav-link text-white" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="../institucional.html">Institucional</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="../parceiros.html">Parceiros</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="../trabalhe-conosco.html">Trabalhe Conosco</a></li>
+          <li class="nav-item d-md-none mt-2"><a href="../fale-conosco.html" class="btn btn-warning text-white font-semibold py-2 px-4 rounded-pill">Fale Conosco</a></li>
         </ul>
       </div>
     </header>
 
-    <main class="container mt-5">
+    <main class="container my-5">
         <div class="text-center mb-5">
-            <img src="../src/img/Logo-Valedourado.png" alt="Valedourado" style="max-width: 200px;">
+            <img src="../src/img/Logo-Valedourado.png" alt="Valedourado" class="img-fluid valedourado-logo">
         </div>
 
-        <h2 class="mt-5 mb-4 text-warning fw-bold">Leites</h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mb-5">
-            <div class="col">
-                <a href="valedourado/leite-integral-uht.html" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/UHT-integral-1920w.webp" class="card-img-top product-img" alt="Leite UHT Integral">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Leite UHT Integral</p>
-                        </div>
-                    </div>
+        <!-- Leites -->
+        <h2 class="mt-5 mb-4 fw-bold section-title">Leites</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="valedourado/leite-integral-uht.html" class="product-list-item">
+                    <img src="../src/img/valedourado/UHT-integral-1920w.webp" class="product-img-small" alt="Leite UHT Integral">
+                    <span>Leite UHT Integral</span>
                 </a>
             </div>
-            <div class="col">
-                <a href="valedourado/leite-desnatado-uht.html" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/UHT-desnatado-1920w.webp" class="card-img-top product-img" alt="Leite UHT Desnatado">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Leite UHT Desnatado</p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <a href="valedourado/leite-desnatado-uht.html" class="product-list-item">
+                    <img src="../src/img/valedourado/UHT-desnatado-1920w.webp" class="product-img-small" alt="Leite UHT Desnatado">
+                    <span>Leite UHT Desnatado</span>
                 </a>
             </div>
-            <div class="col">
-                <a href="valedourado/leite-zero-lactose.html" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/UHT-Zero-lac-1920w.webp" class="card-img-top product-img" alt="Leite Zero Lactose">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Leite UHT Zero Lactose</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-             <div class="col">
-                <a href="valedourado/leite-em-po.html" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/MOCKUP_INTEGRAL-1920w.webp" class="card-img-top product-img" alt="Leite em Pó">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Leite UHT Integral sem tampa </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="valedourado/leite-em-po.html" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/MOCKUP_ZERO_DESNATADO-1920w.webp" class="card-img-top product-img" alt="Leite em Pó">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">LLeite UHT Desnatado sem tampa</p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <a href="valedourado/leite-zero-lactose.html" class="product-list-item">
+                    <img src="../src/img/valedourado/UHT-Zero-lac-1920w.webp" class="product-img-small" alt="Leite Zero Lactose">
+                    <span>Leite UHT Zero Lactose</span>
                 </a>
             </div>
         </div>
 
-        <h2 class="mt-5 mb-4 text-warning fw-bold">Achocolatados</h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mb-5">
-            <div class="col">
-                <a href="valedourado/achocolatado-tradicional.html" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/Achocolatado+Valedourado+1L-1920w.webp" class="card-img-top product-img" alt="Achocolatado Tradicional">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Bebida Láctea Sabor Chocolate</p>
-                        </div>
-                    </div>
+        <!-- Achocolatados -->
+        <h2 class="mt-5 mb-4 fw-bold section-title">Achocolatados</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="valedourado/achocolatado-tradicional.html" class="product-list-item">
+                    <img src="../src/img/valedourado/Achocolatado+Valedourado+1L-1920w.webp" class="product-img-small" alt="Achocolatado Tradicional">
+                    <span>Bebida Láctea Sabor Chocolate</span>
                 </a>
             </div>
-            <div class="col">
-                <a href="valedourado/achocolatado-zero-lactose.html" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/Achocolatado+Zero+Lactose+Valedourado+1L-1920w.webp" class="card-img-top product-img" alt="Achocolatado Zero Lactose">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Achocolatado Zero Lactose</p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <a href="valedourado/achocolatado-zero-lactose.html" class="product-list-item">
+                    <img src="../src/img/valedourado/Achocolatado+Zero+Lactose+Valedourado+1L-1920w.webp" class="product-img-small" alt="Achocolatado Zero Lactose">
+                    <span>Achocolatado Zero Lactose</span>
                 </a>
             </div>
         </div>
 
-        <h2 class="mt-5 mb-4 text-warning fw-bold">Leites Fermentados</h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mb-5">
-            <div class="col">
-                <a href="#" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/fermentado_render-1920w.webp" class="card-img-top product-img" alt="Leite Fermentado Tradicional">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Leite Fermentado Tradicional 900g</p>
-                        </div>
-                    </div>
+        <!-- Leites Fermentados -->
+        <h2 class="mt-5 mb-4 fw-bold section-title">Leites Fermentados</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="valedourado/leite-fermentado-tradicional.html" class="product-list-item">
+                    <img src="../src/img/valedourado/fermentado_render-1920w.webp" class="product-img-small" alt="Leite Fermentado Tradicional">
+                    <span>Leite Fermentado Tradicional 900g</span>
                 </a>
             </div>
-            <div class="col">
-                <a href="#" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/MOCKUP-FERMENTADO-UVA-1920w.webp" class="card-img-top product-img" alt="Leite Fermentado Uva">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Leite Fermentado Sabor Uva 900g</p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <a href="valedourado/leite-fermentado-uva.html" class="product-list-item">
+                    <img src="../src/img/valedourado/MOCKUP-FERMENTADO-UVA-1920w.webp" class="product-img-small" alt="Leite Fermentado Uva">
+                    <span>Leite Fermentado Sabor Uva 900g</span>
                 </a>
             </div>
-            <div class="col">
-                <a href="#" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/zero-lactose-fermentado-1920w.webp" class="card-img-top product-img" alt="Leite Fermentado Zero Lactose">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Leite Fermentado Zero Lactose 900g</p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <a href="valedourado/leite-fermentado-zero-lactose.html" class="product-list-item">
+                    <img src="../src/img/valedourado/zero-lactose-fermentado-1920w.webp" class="product-img-small" alt="Leite Fermentado Zero Lactose">
+                    <span>Leite Fermentado Zero Lactose 900g</span>
                 </a>
             </div>
         </div>
 
-        <h2 class="mt-5 mb-4 text-warning fw-bold">Bebida Láctea Valegut</h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mb-5">
-            <div class="col">
-                <a href="#" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/Valegut+Morango+900g-1920w.webp" class="card-img-top product-img" alt="Valegut Morango">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Valegut Morango 900g</p>
-                        </div>
-                    </div>
+        <!-- Bebida Láctea Valegut -->
+        <h2 class="mt-5 mb-4 fw-bold section-title">Bebida Láctea Valegut</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="valedourado/valegut-morango-900g.html" class="product-list-item">
+                    <img src="../src/img/valedourado/Valegut+Morango+900g-1920w.webp" class="product-img-small" alt="Valegut Morango">
+                    <span>Valegut Morango 900g</span>
                 </a>
             </div>
-            <div class="col">
-                <a href="#" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/Valegut+Ameixa+900g-1920w.webp" class="card-img-top product-img" alt="Valegut Ameixa">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Valegut Ameixa 900g</p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <a href="valedourado/valegut-ameixa-900g.html" class="product-list-item">
+                    <img src="../src/img/valedourado/Valegut+Ameixa+900g-1920w.webp" class="product-img-small" alt="Valegut Ameixa">
+                    <span>Valegut Ameixa 900g</span>
                 </a>
             </div>
-            <div class="col">
-                <a href="#" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/Valegut+Graviola+900g-1920w.webp" class="card-img-top product-img" alt="Valegut Graviola">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Valegut Graviola 900g</p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <a href="valedourado/valegut-graviola-900g.html" class="product-list-item">
+                    <img src="../src/img/valedourado/Valegut+Graviola+900g-1920w.webp" class="product-img-small" alt="Valegut Graviola">
+                    <span>Valegut Graviola 900g</span>
                 </a>
             </div>
-            <div class="col">
-                <a href="#" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/Valegut+Banana+Aveia+e+Mel+900g-1920w.webp" class="card-img-top product-img" alt="Valegut Banana, Aveia e Mel">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Valegut Banana, Aveia e Mel 900g</p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <a href="valedourado/valegut-banana-aveia-mel-900g.html" class="product-list-item">
+                    <img src="../src/img/valedourado/Valegut+Banana+Aveia+e+Mel+900g-1920w.webp" class="product-img-small" alt="Valegut Banana, Aveia e Mel">
+                    <span>Valegut Banana, Aveia e Mel 900g</span>
                 </a>
             </div>
         </div>
 
-        <h2 class="mt-5 mb-4 text-warning fw-bold">Coalhadas</h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mb-5">
-            <div class="col">
-                <a href="valedourado/coalhada-integral.html" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/COALHADA-INTEGRAL-1920w.webp" class="card-img-top product-img" alt="Coalhada Integral">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Coalhada Integral</p>
-                        </div>
-                    </div>
+        <!-- Coalhadas -->
+        <h2 class="mt-5 mb-4 fw-bold section-title">Coalhadas</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="valedourado/coalhada-integral.html" class="product-list-item">
+                    <img src="../src/img/valedourado/COALHADA-INTEGRAL-1920w.webp" class="product-img-small" alt="Coalhada Integral">
+                    <span>Coalhada Integral</span>
                 </a>
             </div>
-            <div class="col">
-                <a href="valedourado/coalhada-desnatada-light.html" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/COALHADA-DESNATADA-1920w.webp" class="card-img-top product-img" alt="Coalhada Desnatada">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Coalhada Desnatada</p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <a href="valedourado/coalhada-desnatada.html" class="product-list-item">
+                    <img src="../src/img/valedourado/COALHADA-DESNATADA-1920w.webp" class="product-img-small" alt="Coalhada Desnatada">
+                    <span>Coalhada Desnatada</span>
                 </a>
             </div>
-            <div class="col">
-                <a href="valedourado/coalhada-integral-com-mel.html" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/COALHADA-MEL-1920w.webp" class="card-img-top product-img" alt="Coalhada com Mel">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Coalhada Integral com Mel</p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <a href="valedourado/coalhada-mel.html" class="product-list-item">
+                    <img src="../src/img/valedourado/COALHADA-MEL-1920w.webp" class="product-img-small" alt="Coalhada com Mel">
+                    <span>Coalhada Integral com Mel</span>
                 </a>
             </div>
-            <div class="col">
-                <a href="valedourado/coalhada-zero-lactose.html" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/COALHADA-ZERO-LAC-1920w.webp" class="card-img-top product-img" alt="Coalhada Zero Lactose">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Coalhada Zero Lactose</p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <a href="valedourado/coalhada-zero-lactose.html" class="product-list-item">
+                    <img src="../src/img/valedourado/COALHADA-ZERO-LAC-1920w.webp" class="product-img-small" alt="Coalhada Zero Lactose">
+                    <span>Coalhada Zero Lactose</span>
                 </a>
             </div>
         </div>
 
-        <h2 class="mt-5 mb-4 text-warning fw-bold">Sucos e Mistas (Vale Mix)</h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mb-5">
-            <div class="col">
-                <a href="#" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/Vale-Mix-Uva-2L-1920w.webp" class="card-img-top product-img" alt="Vale Mix Uva 2L">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Vale Mix Uva 2L</p>
-                        </div>
-                    </div>
+        <!-- Sucos e Mistas (Vale Mix) -->
+        <h2 class="mt-5 mb-4 fw-bold section-title">Sucos e Mistas (Vale Mix)</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="valedourado/vale-mix-uva-2l.html" class="product-list-item">
+                    <img src="../src/img/valedourado/Vale-Mix-Uva-2L-1920w.webp" class="product-img-small" alt="Vale Mix Uva 2L">
+                    <span>Vale Mix Uva 2L</span>
                 </a>
             </div>
-             <div class="col">
-                <a href="#" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/Vale-Mix-Uva-330ml-1920w.webp" class="card-img-top product-img" alt="Vale Mix Uva 330ml">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Vale Mix Uva 330ml</p>
-                        </div>
-                    </div>
+             <div class="col-md-4">
+                <a href="valedourado/vale-mix-uva-330ml.html" class="product-list-item">
+                    <img src="../src/img/valedourado/Vale-Mix-Uva-330ml-1920w.webp" class="product-img-small" alt="Vale Mix Uva 330ml">
+                    <span>Vale Mix Uva 330ml</span>
                 </a>
             </div>
-            <div class="col">
-                <a href="#" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/Vale-Mix-Citricos-2L-1920w.webp" class="card-img-top product-img" alt="Vale Mix Frutas Cítricas 2L">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Vale Mix Frutas Cítricas 2L</p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <a href="valedourado/vale-mix-citricos-2l.html" class="product-list-item">
+                    <img src="../src/img/valedourado/Vale-Mix-Citricos-2L-1920w.webp" class="product-img-small" alt="Vale Mix Frutas Cítricas 2L">
+                    <span>Vale Mix Frutas Cítricas 2L</span>
                 </a>
             </div>
-            <div class="col">
-                <a href="#" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/Vale-Mix-Citricos-330ml-1920w.webp" class="card-img-top product-img" alt="Vale Mix Frutas Cítricas 330ml">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Vale Mix Frutas Cítricas 330ml</p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <a href="valedourado/vale-mix-citricos-330ml.html" class="product-list-item">
+                    <img src="../src/img/valedourado/Vale-Mix-Citricos-330ml-1920w.webp" class="product-img-small" alt="Vale Mix Frutas Cítricas 330ml">
+                    <span>Vale Mix Frutas Cítricas 330ml</span>
                 </a>
             </div>
         </div>
 
-        <h2 class="mt-5 mb-4 text-warning fw-bold">Manteigas</h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mb-5">
-            <div class="col">
-                <a href="#" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/mockup-3d-manteiga-200g-1920w.webp" class="card-img-top product-img" alt="Manteiga 200g">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Manteiga com Sal 200g</p>
-                        </div>
-                    </div>
+        <!-- Manteigas -->
+        <h2 class="mt-5 mb-4 fw-bold section-title">Manteigas</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="valedourado/manteiga-200g.html" class="product-list-item">
+                    <img src="../src/img/valedourado/mockup-3d-manteiga-200g-1920w.webp" class="product-img-small" alt="Manteiga 200g">
+                    <span>Manteiga com Sal 200g</span>
                 </a>
             </div>
-            <div class="col">
-                <a href="#" class="product-link">
-                    <div class="card h-100 border-0 bg-transparent product-item text-center">
-                        <img src="../src/img/valedourado/mockup-3d-manteiga-500g-1920w.webp" class="card-img-top product-img" alt="Manteiga 500g">
-                        <div class="card-body">
-                            <p class="card-text fw-medium text-secondary product-title">Manteiga com Sal 500g</p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <a href="valedourado/manteiga-500g.html" class="product-list-item">
+                    <img src="../src/img/valedourado/mockup-3d-manteiga-500g-1920w.webp" class="product-img-small" alt="Manteiga 500g">
+                    <span>Manteiga com Sal 500g</span>
                 </a>
             </div>
         </div>
@@ -348,17 +217,18 @@
     <footer class="bg-dark text-white p-4 mt-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 text-center text-md-start">
-            <p>Copyright ©2025. All rights reserved by NE Atacadista</p>
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <p class="mb-0">Copyright ©2025. Todos os direitos reservados por NE Atacadista.</p>
           </div>
           <div class="col-md-6 text-center text-md-end">
-            <a href="https://www.instagram.com/neatacadista" target="_blank" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-            <a href="https://wa.me/5511999999999" target="_blank" class="text-white me-3"><i class="bi bi-whatsapp"></i></a>
-            <a href="tel:+5511999999999" class="text-white"><i class="bi bi-telephone"></i> (11) 99999-9999</a>
+            <a href="https://www.instagram.com/neatacadista" target="_blank" rel="noopener" aria-label="Instagram" class="text-white me-3 fs-4"><i class="bi bi-instagram"></i></a>
+            <a href="https://wa.me/5581999999999" target="_blank" rel="noopener" aria-label="WhatsApp" class="text-white me-3 fs-4"><i class="bi bi-whatsapp"></i></a>
+            <a href="tel:+558130350794" aria-label="Telefone" class="text-white fs-4"><i class="bi bi-telephone"></i></a>
           </div>
         </div>
       </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../src/js/script.js"></script>
 </body>
