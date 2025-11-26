@@ -15,4 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
             alert(`Você clicou no logo do parceiro: ${partnerName}`);
         });
     });
+
+    const whatsappIcon = document.getElementById('whatsapp-icon');
+    const whatsappDropdown = document.getElementById('whatsapp-dropdown');
+
+    whatsappIcon.addEventListener('click', function() {
+        if (whatsappDropdown.style.display === 'block') {
+            whatsappDropdown.style.display = 'none';
+        } else {
+            whatsappDropdown.style.display = 'block';
+        }
+    });
+
+    window.addEventListener('click', function(event) {
+        if (!whatsappIcon.contains(event.target) && !whatsappDropdown.contains(event.target)) {
+            whatsappDropdown.style.display = 'none';
+        }
+    });
 });

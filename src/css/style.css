@@ -1,5 +1,13 @@
 body {
     padding-top: 88px;
+    padding-bottom: 70px;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1020;
 }
 
 .bg-primary {
@@ -103,4 +111,187 @@ body {
         width: 8rem;
         height: 8rem;
     }
+}
+
+
+/* ===============================
+   ESTILO GERAL
+================================ */
+body {
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+.hover-text-warning:hover {
+    color: #ffca2c !important;
+}
+
+/* ===============================
+   TÍTULOS DE CATEGORIAS (IDÊNTICO AO SITE VALEDOURADO)
+================================ */
+.section-title {
+    color: #ffa102;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .section-title {
+        text-align: left;
+        border-bottom: 3px solid #f0f0f0;
+        padding-bottom: 12px;
+        margin-left: 5px;
+    }
+}
+
+/* ===============================
+   GRID DOS PRODUTOS
+================================ */
+.row.g-4 {
+    row-gap: 30px !important; /* Reduced from 60px */
+}
+
+/* ===============================
+   ITEM DE PRODUTO
+================================ */
+.product-item {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform .2s ease-in-out;
+    background-color: #ffffff;
+}
+
+.product-item:hover {
+    transform: scale(1.04);
+}
+
+/* ===============================
+   IMAGENS
+================================ */
+.product-item img {
+    width: 100%;
+    max-width: 250px; /* Increased from 200px */
+    height: 230px; /* Increased from 180px */
+    margin-bottom: 12px;
+    object-fit: contain;
+    /* Removed filter: drop-shadow */
+}
+
+/* ===============================
+   NOME DO PRODUTO
+================================ */
+.product-name {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+/* ===============================
+   PESO
+================================ */
+.product-weight {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #777;
+}
+
+/* ===============================
+   CORES DAS CATEGORIAS
+================================ */
+.cor-marrom { color: #777; }
+.cor-laranja { color: #777; }
+.cor-vermelho { color: #777; }
+.cor-amarelo { color: #777; }
+.cor-integral { color: #777; }
+.cor-roxo { color: #777; }
+.cor-verde { color: #777; }
+
+/* ===============================
+   RESPONSIVIDADE
+================================ */
+@media (max-width: 768px) {
+    .product-item img {
+        max-width: 200px;
+    }
+}
+
+.card-missao-visao-valores {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.unidades-title {
+    text-align: center;
+}
+
+.unidades-card {
+    height: 100%;
+}
+
+/* WhatsApp Icon */
+#whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+#whatsapp-icon svg {
+    width: 35px;
+    height: 35px;
+}
+
+/* WhatsApp Dropdown */
+#whatsapp-dropdown {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    z-index: 1001;
+    background-color: #fefefe;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
 }

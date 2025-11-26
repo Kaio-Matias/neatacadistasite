@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguiça Suína Tipo Calabresa - Nutribras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../src/css/style.css">
+    
+    <style>
+        /* Cores Personalizadas Nutribras (exemplo, pode ajustar) */
+        .text-nutri-red { color: #d9232a; }
+        .bg-nutri-red { background-color: #d9232a; }
+        .text-nutri-yellow { color: #fdb913; }
+        
+        /* Estilo das Abas (Tabs) */
+        .nav-tabs {
+            border-bottom: none;
+        }
+        .nav-tabs .nav-link {
+            border: none;
+            border-radius: 0;
+            font-weight: bold;
+            padding: 10px 30px;
+            font-size: 1.2rem;
+            color: #d9232a; /* Vermelho para inativo */
+            background-color: transparent;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: #fdb913; /* Amarelo para ativo */
+            color: white;
+        }
+        .nav-tabs .nav-link:hover {
+            border: none;
+            color: #d9232a;
+        }
+        .nav-tabs .nav-link.active:hover {
+            color: white;
+        }
+
+        /* Caixa de Conteúdo */
+        .tab-content-box {
+            background-color: #fefaf0; /* Amarelo bem claro */
+            padding: 2rem;
+            min-height: 300px;
+        }
+
+        /* Responsividade da imagem */
+        .product-detail-img {
+            max-height: 500px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Estilo para a descrição do produto */
+        .product-description-box {
+            background-color: #fefaf0; /* Amarelo bem claro */
+            padding: 2rem;
+            border: 1px solid #fdb913;
+        }
+        .product-description-box h3 {
+            color: #d9232a;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white p-4 shadow-md fixed-top">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="flex-shrink-0">
+          <a href="../../">
+            <img src="../../src/img/LOGO NE.png" alt="Logo NE Atacadista" width="150" height="40" />
+          </a>
+        </div>
+        <nav class="d-none d-md-flex gap-3 flex-grow-1 justify-content-center">
+          <a href="../../index.html" class="text-white text-decoration-none hover-text-warning">Home</a>
+          <a href="../../institucional.html" class="text-white text-decoration-none hover-text-warning">Institucional</a>
+          <a href="../../parceiros.html" class="text-white text-decoration-none hover-text-warning">Parceiros</a>
+          <a href="../../trabalhe-conosco.html" class="text-white text-decoration-none hover-text-warning">Trabalhe Conosco</a>
+        </nav>
+        <div class="flex-shrink-0 d-none d-md-block">
+          <a href="../../fale-conosco.html" class="btn btn-warning text-white font-semibold py-2 px-5 rounded-lg">Fale Conosco</a>
+        </div>
+        <button class="d-md-none navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link text-white" href="../../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="../../institucional.html">Institucional</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="../../parceiros.html">Parceiros</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="../../trabalhe-conosco.html">Trabalhe Conosco</a></li>
+          <li class="nav-item d-md-none">
+            <a href="../../fale-conosco.html" class="btn btn-warning text-white font-semibold py-2 px-5 rounded-lg">Fale Conosco</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container mt-5 mb-5">
+        <div class="row align-items-center">
+            <div class="col-md-5 text-center mb-4 mb-md-0">
+                <img src="../../src/img/nubribas/Linguiça suina tipo Calabresa 15kg.png" alt="Linguiça Suína Tipo Calabresa Nutribras" class="img-fluid product-detail-img">
+            </div>
+
+            <div class="col-md-7">
+                <h2 class="text-nutri-red fw-bold mb-0">Linguiça Suína Tipo Calabresa</h2>
+                <h2 class="text-nutri-yellow fw-bold mb-4">Nutribras</h2>
+                
+                <p class="fs-5 text-secondary">
+                    A Linguiça Calabresa da Nutribras é defumada no ponto certo para trazer muito sabor e qualidade.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+            <div class="col-lg-8">
+                <div class="product-description-box">
+                    <h3>DESCRIÇÃO</h3>
+                    <p>Pode ser pura, como acompanhamento ou como parte de suas melhores receitas. A Linguiça Calabresa da Nutribras é defumada no ponto certo para trazer muito sabor e qualidade.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white p-4 mt-5 fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p>Copyright ©2025. All rights reserved by NE Atacadista</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="https://www.instagram.com/neatacadista" target="_blank" rel="noopener" aria-label="Instagram" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp" class="text-white me-3"><i class="bi bi-whatsapp"></i></a>
+            <a href="tel:+5511999999999" aria-label="Telefone" class="text-white"><i class="bi bi-telephone"></i> (11) 99999-9999</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="whatsapp-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+      </svg>
+    </div>
+
+    <div id="whatsapp-dropdown">
+        <a href="https://wa.me/5582998020061" target="_blank" class="whatsapp-button">
+          Vinicius
+        </a>
+        <a href="https://wa.me/5582998020059" target="_blank" class="whatsapp-button">
+          IAGO
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../../src/js/script.js"></script>
+</body>
+</html>
